@@ -8,7 +8,9 @@
 
 #import "RyanViewController.h"
 
+
 @interface RyanViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 

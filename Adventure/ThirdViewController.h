@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ThirdViewController : UIViewController
+@property NSString *thirdName;
 
 @end

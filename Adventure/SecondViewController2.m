@@ -7,12 +7,25 @@
 //
 
 #import "SecondViewController2.h"
+#import "ThirdViewController2.h"
 
 @interface SecondViewController2 ()
 
 @end
 
 @implementation SecondViewController2
+
+- (void) prepareForSegue: (UIStoryboardSegue *)segue sender:(UIButton *)sender
+{
+    ThirdViewController2 *nextViewController = [segue destinationViewController];
+    nextViewController.title = sender.currentTitle;
+}
+
+
+-(IBAction)unwindtoSecondViewControler2:(UIStoryboardSegue *)sender
+{
+    NSLog(@"Back to the begining");
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

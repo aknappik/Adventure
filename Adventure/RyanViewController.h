@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RyanViewController : UIViewController
+@property UIImage *image;
 
 @end
